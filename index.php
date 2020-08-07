@@ -7,10 +7,7 @@
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
 </head>
-<style>
+<body <?php body_class(); ?>>
 
-</style>
-<body>
 
-</body>
 </html>

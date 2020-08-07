@@ -1,3 +1,13 @@
+<?php 
+
+/*
+
+Template Name: General Template
+
+*/
+
+?>
+
 <?php get_header(); ?>
 
 <img class="img-fluid" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
@@ -6,9 +16,8 @@
 		<main>
 			<section class="middle-area">
 				<div class="container">
-					<div class="row">
-						
-						<div class="news col-md-8">
+
+						<div class="general-template">
 							<?php 
 							// Se houver algum post
 							if( have_posts() ):
@@ -17,24 +26,13 @@
 
 							?>
 
-							<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+							<article>
+								<h2><?php the_title(); ?></h2>
+								<?php the_content(); ?>
+							</article>
 
 							<?php 
 								endwhile;
-
-								?>
-									
-								<div class="row">
-									<div class="pages text-left col-6">
-										<?php previous_posts_link( __( "<< Newer posts", 'wpcurso' ) ); ?>
-									</div>
-									<div class="pages text-right col-6">
-										 <?php next_posts_link( __( "Older posts >>", 'wpcurso' ) ); ?>
-									</div>
-								</div>
-	
-
-								<?php
 							else:
 							?>
 
@@ -42,9 +40,8 @@
 
 							<?php endif; ?>
 
-						</div>
-						<?php get_sidebar( 'blog' ); ?>						
-					</div>
+						</div>						
+
 				</div>				
 			</section>
 		</main>

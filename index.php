@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
 </head>
 <style>
 

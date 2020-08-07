@@ -15,6 +15,7 @@ function load_scripts(){
 	wp_enqueue_script( 'fitvids', get_template_directory_uri() . '/js/fitvids.js', array( 'jquery' ), null, true );
 }
 
+
 // Adicionando fontes ao backend do Gutenberg
 function wpcurso_gutenberg_fonts(){
 	wp_enqueue_style( 'lato-font', 'https://fonts.googleapis.com/css?family=Lato:400,900' );

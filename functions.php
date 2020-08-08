@@ -35,6 +35,8 @@ function wpcurso_config(){
 		)
 	);	
 
+
+
 	// Adicionando suporte ao tema
 	$args = array(
 		'height'	=> 225,

@@ -12,6 +12,7 @@
 
 					<div class="row">
 						<div class="pages text-left col-6">
+              <!-- &laquo; %link seta para esquerda -->
 							<?php next_post_link( '&laquo; %link' ); ?>
 						</div>
 						<div class="pages text-right col-6">
